@@ -1,0 +1,48 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+@import 'dashboard';
+@import 'show_article';
+@import 'layout';
+.color{
+    color:blue;
+}
+.btn-show{
+    color:white !important;
+    cursor: pointer;
+}
+.article-section{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:100px;
+    background-color: #1b1e21;
+    height: 100%;
+
+.card-button{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+}
+.home-user{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@media screen and (max-width: 375px) {
+    .article-section{
+        flex-direction: column;
+
+        .article-card{
+            margin-top:50px;
+
+        }
+
+    }
+}
+

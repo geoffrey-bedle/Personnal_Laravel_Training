@@ -1,0 +1,23 @@
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+
+    .dashboard-menu {
+        border: solid black 1px;
+        min-height: 50%;
+    }
+    .last-articles{
+        display: flex;
+        .icons{
+            margin-left: 15px;
+            .icon{
+                margin-right: 10px;
+                cursor: pointer;
+                color: black;
+                :hover{
+                    color: dimgrey;
+                }
+            }
+        }
+    }
+}
