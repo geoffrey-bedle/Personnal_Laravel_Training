@@ -21,7 +21,6 @@ class DashboardController extends Controller
     public function destroy(Post $post)
     {
 
-
             $post->delete();
 
             return redirect(route('user.dashboard',[auth()->user(),auth()->user()->name]))->with('danger', 'Votre article a bien été supprimé');

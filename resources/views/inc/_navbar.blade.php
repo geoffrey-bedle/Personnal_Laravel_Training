@@ -19,6 +19,9 @@
                 <a class="nav-link" href="{{route('user.dashboard',[ auth()->user(), auth()->user()->name])}}">Mon espace</a>
             </li>
                 @endif
+            <li>
+                <a class="nav-link">Contact</a>
+            </li>
         </ul>
     </div>
     <div class="home-user">

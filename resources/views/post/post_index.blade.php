@@ -20,12 +20,14 @@
                     @endforeach
                     <div class="card-button">
                         <a href="{{route('post.show',$post)}}" class="btn btn-success btn-show">Voir l'article</a>
+                        @if(auth()->user() == $post->user)
                         <form method="post" action="{{route('post.destroy',$post->id)}}">
                             @csrf
                             <button onclick="return confirm('êtes vous sur de vouloir supprimer cet article ?')"
                                     class="btn btn-danger">Supprimer
                             </button>
                         </form>
+                            @endif
                     </div>
                 </div>
             </div>

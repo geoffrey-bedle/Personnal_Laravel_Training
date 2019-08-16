@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Category;
+use App\Http\Requests\ArticleRequest;
 use App\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -27,7 +28,7 @@ class PostController extends Controller
             ]);
     }
 
-    public function store(Request $request)
+    public function store(ArticleRequest $request)
     {
         $post = new Post();
 //----------------------------------------------------------
@@ -69,7 +70,7 @@ class PostController extends Controller
 
     }
 
-    public function update(Request $request, Post $post)
+    public function update(ArticleRequest $request, Post $post)
     {
         $input = $request->all();
 
