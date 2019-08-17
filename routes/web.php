@@ -34,8 +34,9 @@ Route::post('post/{post}:delete','PostController@destroy')->name('post.destroy')
 
 Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 
+Route::post('contact/send', 'ContactController@send')->name('send');
 
-
+Route::get('contact','ContactController@contactForm')->name('contact');
 
 
 Route::get('dashboard/{post}/delete', 'DashboardController@destroy')->name('user.destroy');

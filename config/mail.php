@@ -1,5 +1,6 @@
 <?php
-
+// solution trouvée ici pour googlemail smtp:
+// https://blog.mailtrap.io/send-email-in-laravel/
 return [
 
     /*
@@ -29,8 +30,8 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
-
+    'host' => env('MAIL_HOST', 'smtp.gmail.com'),
+//il faut mettre googlemail.com pour le smtp de google et pas gmail.com
     /*
     |--------------------------------------------------------------------------
     | SMTP Host Port
@@ -43,7 +44,7 @@ return [
     */
 
     'port' => env('MAIL_PORT', 587),
-
+//465 pour googlemail smtp
     /*
     |--------------------------------------------------------------------------
     | Global "From" Address
@@ -72,7 +73,7 @@ return [
     */
 
     'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-
+// ssl pour googlemail smtp
     /*
     |--------------------------------------------------------------------------
     | SMTP Server Username

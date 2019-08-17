@@ -12,10 +12,15 @@ class DashboardController extends Controller
 {
     public function show(User $user)
     {
+        if ($user == auth()->user()){
+
         return view('user/dashboard',
             [
                 'user' => $user,
             ]);
+        }else{
+            return 'Vous n\'êtes pas ' . $user->name;
+        }
     }
 
     public function destroy(Post $post)

@@ -9,7 +9,7 @@
 
 
             <div class="card article-card" style="width: 18rem;">
-                <img class="card-img-top" src="https://placekitten.com/400/200" alt="Card image cap">
+                <img class="card-img-top" src="http://placebacon.net/400/300" alt="Card image cap">
                 <div class="card-body">
                     <h1 class="card-title">{{$post->title}}</h1>
                     <h5>{{$post->category->name}}</h5>

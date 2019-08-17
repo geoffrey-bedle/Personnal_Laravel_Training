@@ -20,7 +20,7 @@
             </li>
                 @endif
             <li>
-                <a class="nav-link">Contact</a>
+                <a class="nav-link" href="{{route('contact')}}">Contact</a>
             </li>
         </ul>
     </div>

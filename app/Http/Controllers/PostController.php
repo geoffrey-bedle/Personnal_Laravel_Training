@@ -30,6 +30,7 @@ class PostController extends Controller
 
     public function store(ArticleRequest $request)
     {
+
         $post = new Post();
 //----------------------------------------------------------
 //dd($request->input('title'));
